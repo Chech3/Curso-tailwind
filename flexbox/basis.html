@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-600 flex flex-col gap-10">
+    <h1 class="text-3xl text-center">Flex Basis</h1>
+    <div class="flex flex-row h-48">
+      <div class="bg-red-600 basis-1/4"></div>
+      <!--El flex-basis nos indica que tamaño va a tener este elemento hijo-->
+      <div class="bg-blue-400 basis-1/4"></div>
+      <div class="bg-purple-500 basis-1/2"></div>
+    </div>
+    <h1 class="text-3xl text-center">Flex grow</h1>
+    <div class="flex flex-row h-48">
+      <div class="bg-red-600 h-48 w-48"></div>
+      <div class="bg-blue-400 h-48 w-48 flex-grow"></div>
+      <div class="bg-purple-500 h-48 w-48"></div>
+    </div>
+    <h1 class="text-3xl text-center">Flex Shrink</h1>
+    <div class="flex flex-row h-48">
+      <div class="bg-red-600 h-48 w-48 flex-1"></div>
+      <div class="bg-blue-400 h-48 w-48 flex-grow shrink-0"></div>
+      <div class="bg-purple-500 h-48 w-48 flex-1"></div>
+    </div>
+    <h1 class="text-3xl text-center">Flex initial</h1> <!--Permite que se haga pequeño, pero no mas grande-->
+    <div class="flex flex-row h-48">
+      <div class="bg-red-600 h-64 w-14 flex-none"></div>
+      <div class="bg-blue-400 h-64 w-64 flex-initial"></div>
+      <div class="bg-purple-500 h-32 w-32 flex-initial"></div>
+    </div>
+  </body>
+</html>
